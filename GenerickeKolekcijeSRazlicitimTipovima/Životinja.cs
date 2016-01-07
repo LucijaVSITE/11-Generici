@@ -2,34 +2,39 @@
 
 namespace Vsite.CSharp
 {
+    abstract class Životinja
+    {    
+        public abstract void PokreniSe();
+    }
 
-    class Riba
+
+    class Riba : Životinja
     {
-        void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("Plivam");
         }
     }
 
-    class Gmaz
+    class Gmaz : Životinja
     {
-        void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("Gmižem");
         }
     }
 
-    class Ptica
+    class Ptica : Životinja
     {
-        void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("Letim");
         }
     }
 
-    class Sisavac
+    class Sisavac : Životinja
     {
-        void PokreniSe()
+        public override void PokreniSe()
         {
             Console.WriteLine("Trčim");
         }
